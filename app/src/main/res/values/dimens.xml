@@ -6,5 +6,7 @@
     <dimen name="telefono_contacto">20sp</dimen>
     <dimen name="top">20sp</dimen>
     <dimen name="left">10sp</dimen>
+    <dimen name="corner_radius_cardview">4dp</dimen>
+    <dimen name="cardview">20sp</dimen>
 
 </resources>
