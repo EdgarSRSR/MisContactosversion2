@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.solrom.edgar.miscontactos.MainActivity">
-    <!-- <include
+    <include
         android:id="@+id/miActionBar"
-        layout="@layout/actionbar"></include>-->
+        layout="@layout/actionbar"></include>
 
 
     <!--<ListView
@@ -19,9 +19,9 @@
         android:id="@+id/rvContactos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/miActionBar"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
         />
 
 </RelativeLayout>
-
-
-
