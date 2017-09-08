@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
-        //setSupportActionBar(miActionBar);
+        Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
+        setSupportActionBar(miActionBar);
 
         listaContactos = (RecyclerView) findViewById(R.id.rvContactos);
 
@@ -61,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
     }
+        public ContactoAdaptador adaptador;
         public void inicializarAdaptador(){
-            ContactoAdaptador adaptador = new ContactoAdaptador(contactos);
+            adaptador = new ContactoAdaptador(contactos, this);
             listaContactos.setAdapter(adaptador);
         }
 
@@ -78,4 +79,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 
